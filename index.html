@@ -7,11 +7,32 @@
     <title>CLoud webb</title>
   </head>
   <body>
-    <h1>Tant Bella</h1>
-    <p>Cloud24</p>
-    <button>
-      <a href="calculator.html"> Miniräknare </a>
-    </button>
+    <header>
+      <h1>Tant Bella</h1>
+      <p>Cloud24</p>
+    </header>
+    <main>
+      <button>
+        <a href="calculator.html"> Gå till Miniräknaren" </a>
+      </button>
+      <div id="inputnumber">
+        <p>Is your number big or small?</p>
+        <input type="number" id="input1" placeholder="Enter a number" />
+        <button onclick="bigOrSmall()">Enter</button>
+        <p>
+          <span id="numberIs"> </span>
+        </p>
+      </div>
+
+      <div id="evenOdd">
+        <p>Is your number odd or even?</p>
+        <input type="number" id="input2" placeholder="Enter a number" />
+        <button onclick="evenOrOdd()">Enter</button>
+        <p>
+          <span id="oddOrEven"> </span>
+        </p>
+      </div>
+    </main>
 
     <script src="index.js" />
   </body>
